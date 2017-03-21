@@ -1,0 +1,7 @@
+chair(c)
+robot(r)
+robot(r1)
+nextTo(r, c, s)
+nextTo(r, d, s)
+onFloor(d, s)
+holding(r1, a, s)

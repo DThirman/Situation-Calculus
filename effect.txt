@@ -1,0 +1,8 @@
+holding(r, x, do(pickup(r, x), s)) 
+!holding(r, x, do(drop(r, x), s))
+nextTo(r, y, do(walk(r, y), s)) 
+nextTo(r, y, do(drop(r, y), s)) 
+#nextTo(r, y, s) → nextTo(x, y, do(drop(r, x), s)) 
+#y = x → !nextTo(r, x, do(walk(r, y), s)) 
+onfloor(x, do(drop(r, x), s)) 
+!onfloor(x, do(pickup(r, x), s))

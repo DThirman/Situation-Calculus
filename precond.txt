@@ -1,0 +1,3 @@
+Poss(walk(r, y), s) :- robot(r)
+Poss(pickup(r, x), s) :- robot(r), onFloor(x,s), forall(z, !holding(r, z, s)), nextTo(r, x, s) 
+Poss(drop(r, x), s) :- robot(r), holding(r, x, s)
